@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-newsreader), ui-serif, Georgia, serif;
+
+  --color-primary: #644741;
+  --color-primary-container: #7e5f58;
+  --color-on-primary: #ffffff;
+  --color-secondary: #79573a;
+  --color-background: #fef8f3;
+  --color-surface: #fef8f3;
+  --color-surface-container-low: #f8f3ee;
+  --color-surface-container-highest: #e6e2dd;
+  --color-on-surface: #1d1b19;
+  --color-on-surface-variant: #56423c;
+  --color-outline-variant: #dcc1b8;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface;
+  }
+}
+
+.serif-italic {
+  font-family: var(--font-serif);
+  font-style: italic;
+}
